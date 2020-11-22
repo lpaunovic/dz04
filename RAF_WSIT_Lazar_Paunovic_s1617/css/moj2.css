@@ -1,0 +1,276 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.celastrana
+{
+    margin: 0 auto;
+    width: 800px;
+    height: 900px;
+    background: whitesmoke;
+
+}
+
+
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-right:50px ;
+    background-color: rgb(5, 32, 107);
+
+
+}
+li
+{
+    float: right;
+    font-size:18px ;
+}
+
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover
+{
+    background-color: blue;
+}
+
+.lokacija
+{
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+}
+.gradovi
+{
+    width: 200px;
+    height: 380px;
+    float: left;
+    
+}
+
+.mapa
+{
+    float: right;
+    width: 530px;
+    height: 380px;
+   
+}
+p a
+{
+    text-decoration: none;
+    color: black;
+}
+p a:hover
+{
+    background-color: blue;
+}
+
+.forma
+{
+    width: 790px;
+    height: 300px;
+    margin-top: 10px;
+    border: 2px outset;
+
+}
+.prijava
+{
+    width: 300px;
+    height: 280px;
+    float: left;
+    margin: 10px;
+   
+
+}
+
+.registracija
+{
+    width: 350px;
+    height: 280px;
+    float: right;
+    margin: 10px;
+   padding-left: 20px;
+}
+
+.label1
+{
+    width: 200px;
+}
+.login
+{
+    background-color: rgb(250, 199, 32);
+        width:100px;
+        height:25px;
+        font-weight: bold;
+        color: floralwhite;
+}
+.forgot
+{
+    width:140px;
+    height:25px;
+    font-size: small;
+    font-weight: bold;
+    color: black;
+    background-color: blue
+}
+.fa {
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-fejs {
+    background: #3B5998;
+    color: white;
+
+}
+.fa-twiter {
+    background: #55ACEE;
+    color: white;
+
+}
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .levo
+  {
+      width: 170px;
+      height: 280px;
+      float: left;
+    
+  }
+  .label2
+  {
+      width: 140px;
+  }
+
+  .desno
+  {
+      float: right;
+      width: 150px;
+      height: 250px;
+      padding-top: 20px;
+  }
+
+  .label3
+  {
+      width: 140px;
+  }
+
+  .signup
+  {
+
+    background-color: rgb(25, 226, 68);
+    width:110px;
+    height:30px;
+    font-size: small;
+    font-weight: bold;
+    color: floralwhite;
+    margin-top: 10px;
+
+  }
+
+textarea
+{
+    resize: none;
+}
+
+.nav
+{
+  width: 200px;
+  height: 30px;
+  background: rgb(75, 75, 138);
+  display: inline-block;
+  color:white;
+}
+.nav a
+{
+  text-decoration: none;
+}
+.hamburger
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(75, 75, 138);
+    padding:10px;  
+    display: none;
+}
+.hamburger .line
+{
+    width: 35px;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 80%;
+    background-color: white;
+    height: 5px;
+    
+}
+
+@media only screen and (max-width:1024px)
+{
+    .nav
+    {
+        display: none;
+    }
+   
+    .hamburger
+    {
+        
+        display: none;
+    }
+}
+@media only screen and (max-width:800px)
+{
+  .hamburger
+  {
+    display: block;
+    margin: 0px;
+    
+  }
+
+  .header 
+  {
+    display: none;
+  }
+  .prijava
+    {
+        width: 100%;
+    }
+    .celastrana
+    {
+        height: 1500px;
+    }
+    .registracija
+    {   
+        
+        float: left;
+        width: 50%;
+    }
+
+    .gradovi
+    {
+        width: 100%;
+    }
+
+    .mapa
+    {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+   
+  
+}
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Početna</title>
+    <link href="css/moj.css" rel="stylesheet">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle(400);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $(".nav").css("display","block");
+                }
+            })
+        })
+     
+    </script>
+</head>
+<body>
+
+        <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav">
+                    <ul>
+                            <li><a href="pocetna.html">Pocetna</a></li>
+                            <li><a href="onama.html">O nama</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                           
+                        </ul>
+            </div>
+   
+
+    <div class="cela">
+        <div class="header">
+            <div class="slika">
+                <img src="images/Vinarija.jpg">
+            </div>
+            <div class="meni">
+                    <ul>
+                            <li><a class="active" href="pocetna.html">Pocetna</a></li>
+                            <li><a href="onama.html">O nama</a></li>
+                            <li><a href="#">Nas tim</a></li>
+                            <li><a href="#">Proizvodi</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+           
+                       </ul>
+
+            </div>
+        </div>
+
+
+        <div class="leva">
+            <p><h3>VINARIJA KOVACEVIC</h3></p>
+            <p>Porodičnu tradiciju proizvodnje vina, dužu od 100 godina, pre desetak godina je preuzeo Miroslav Kovačević, stvarajući jednu novu, modernu vinariju, sa idejom da vinogradarska i vinarska iskustva svog oca i svojih dedova, uz pomoć najsavremenije vinarske tehnologije uvede u 21. vek.</p>
+
+            <div class="proizvodi">
+                <div class="proizvodi1">
+                    <img src="images/belo.jfif">
+                    <P>BELO VINO </P>
+                   KOLIČINA:  <input type="text" class="label"><br>
+                    <button class="dugme">DODAJ U KORPU</button>
+                </div>
+                <div class="proizvodi1">
+                        <img src="images/belo1.jfif">
+                        <P>KOVACEVIC BELO VINO  </P>
+                        KOLIČINA:  <input type="text" class="label"><br>
+                         <button class="dugme">DODAJ U KORPU</button>
+                    </div>
+                    <div class="proizvodi1">
+                            <img src="images/belo2.jfif">
+                            <P>BELO VINO SUVO</P>
+                            KOLIČINA:  <input type="text" class="label"><br>
+                             <button class="dugme">DODAJ U KORPU</button>
+                        </div>
+
+            </div>
+            <div class="proizvodi">
+                    <div class="proizvodi1">
+                            <img src="images/crno.jfif">
+                            <P>CRNO VINO  </P>
+                            KOLIČINA:  <input type="text" class="label"><br>
+                             <button class="dugme">DODAJ U KORPU</button>
+                        </div>
+                        <div class="proizvodi1">
+                                <img src="images/crno1.jfif">
+                                <P>CRVENO VINO </P>
+                                KOLIČINA:  <input type="text" class="label"><br>
+                                 <button class="dugme">DODAJ U KORPU</button>
+                            </div>
+                            <div class="proizvodi1">
+                                    <img src="images/crno2.jfif">
+                                    <P>CRVENO VINO </P>
+                                    KOLIČINA:  <input type="text" class="label"><br>
+                                     <button class="dugme">DODAJ U KORPU</button>
+                                </div>
+
+            </div>
+
+        </div>
+        <div class="desna">
+            <p><H3>Registracija</H3></p>
+            <hr>
+            
+            <div class="forma">
+
+                <input type="text" class="label1" placeholder="unesite ime">
+                <br><br><input type="text" class="label1" placeholder="unesite prezime">
+                <br><br><input type="email" class="label1" placeholder="unesite email">
+                <br><br><input type="email" class="label1" placeholder="potvrdite email">
+                <br><br><input type="password" class="label1" placeholder="unesite lozinku">
+                <br><br><input type="password" class="label1" placeholder="potvrdite lozinku">
+                <br><br>Grad:
+                <select>
+                    <option>Podgorica</option>
+                    <option>Niksic</option>
+                    <option>Tivat</option>
+                    <option>Berane</option>
+                </select>
+
+                <br><br>Pol:
+                <br>Muski:<input type="checkbox">
+                Zenski:<input type="checkbox">
+                <BR><BR><button class="dugme1">POTVRDI</button>
+           
+           
+            </div>
+
+
+        </div>
+
+        <div class="vesti">
+            <p><h2>VESTI</h2></p>
+            <div class="vesti1">
+                <img src="images/josif.jfif" width="280px" height="150">
+                <h4>Josif Pančić je rekao “Gde vinova loza raste, klimatski je raj”…</h4>
+
+            </div>
+            <div class="vesti1">
+                    <img src="images/vinograd.jfif" width="280px" height="150px">
+                    <h4>Upravo takva, zaštitnica Sremskog rejona, Fruška gora, na svojim padinama skriva vrlo plodno zemljište, pogodno za gajenje vinograda i vinove loze.</h4>
+                </div>
+                <div class="vesti1">
+                        <img src="images/grozd.jfif" width="280px" height="150px">
+                    <h4>O grožđu se najviše priča u jesen kada počnu berbe ili kada se pije vino, a na to koliko je grožđe kao hrana dobro za naše zdravlje – često zaboravljamo.</h4>
+                    </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="podaci">
+            LAZAR PAUNOVIC, S16/18, CVIJICEVA 93, lpaunovic1618s@raf.rs,
+                </div>
+        </div>
+        
+
+
+    </div>
+
+
+   
+      
+
+        
+
+</body>
+</html>

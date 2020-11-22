@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>O NAMA</title>
+    <link rel="stylesheet" href="css/moj1.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle(400);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $(".nav").css("display","inline");
+                }
+            })
+        })
+     
+    </script>
+  </head>
+<body>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="nav">
+            
+                    <a href="pocetna.html">Pocetna</a>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="onama.html">O nama</a>
+                    
+                
+    </div>
+
+    <div class="celastrana">
+        
+        <div class="header">
+             <ul>
+                 <li><a class="active" href="pocetna.html">Pocetna</a></li>
+                 <li><a href="onama">O nama</a></li>
+                 <li><a href="#">Nas tim</a></li>
+                 <li><a href="#">Proizvodi</a></li>
+                 <li><a href="kontakt.html">Kontakt</a></li>
+
+            </ul>
+
+        </div>
+        <br>
+        
+
+        <h2 style="font-family:'Times New Roman', Times, serif;">VINARIJA KOVACEVIC</h2>
+        
+        <div class="centar">
+            
+            <p>
+              Porodičnu tradiciju proizvodnje vina, dužu od 100 godina, pre desetak godina je preuzeo Miroslav Kovačević, stvarajući jednu novu, modernu vinariju, sa idejom da vinogradarska i vinarska iskustva svog oca i svojih dedova, uz pomoć najsavremenije vinarske tehnologije uvede u 21. vek.
+              
+              U poslednjih deset godina, Vinarija Kovačević intenzivno sarađuje sa najuglednijim fruškogorskim vinogradarima, ne samo u cilju proizvodnje najkvalitetnijeg grožđa na najboljim fruškogorskim parcelama - za potrebe Vinarije Kovačević, nego i sa željom da se zajedničkim snagama stvori osnova za vina sa izrazitim pečatom fruškogorskog podneblja. Danas, Vinarija Kovačević ima i dugoročno ugovorenu i brižljivo kontrolisanu proizvodnju grožđa na površini od oko 100 hektara vinograda, koji se nalaze u vlasništvu starih fruškogorskih vinogradarskih porodica.</p>
+          
+        </div>
+        <h2 style="text-align:center">GALERIJA</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="images/crno2.jfif" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/crno.jfif" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/belo2.jfif" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/belo1.jfif" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/crno2.jfif" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/crno.jfif" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/belo2.jfif" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/belo1.jfif" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/crno2.jfif" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/crno.jfif" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/belo2.jfif" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/belo1.jfif" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+       
+              
+                  
+                </div>
+     
+   
+
+
+</body>
+</html>

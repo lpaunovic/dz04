@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/moj2.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle(400);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $(".nav").css("display","block");
+                }
+            })
+        })
+     
+    </script>
+</head>
+<body>
+
+    <div class="celastrana">
+            <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="nav">
+                        
+                                <a href="pocetna.html">Pocetna</a>
+                                <a href="kontakt.html">Kontakt</a>
+                                <a href="onama.html">O nama</a>
+                               
+                            
+                </div>
+        <div class="header">
+                <ul>
+                        <li><a class="active" href="pocetna.html">Pocetna</a></li>
+                        <li><a href="onama.html">O nama</a></li>
+                        <li><a href="#">Nas tim</a></li>
+                        <li><a href="#">Proizvodi</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+       
+                   </ul>
+        </div>
+
+
+        <div class="lokacija">
+            <div class="gradovi">
+                <p style="font-size: 22px;"><b>Lokacija</b></p>
+                <hr>
+
+                <p style="font-size: 18px;"><a href="#">Podgorica</a></p>
+                <p style="font-size: 18px;"><a href="#">Niksic</a></p>
+                <p style="font-size: 18px;"><a href="#">Tivat</a></p>
+                <p style="font-size: 18px;"><a href="#">Berane</a></p>
+                
+
+            </div>
+
+            <div class="mapa">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe width="520" height="380" id="gmap_canvas" src="https://maps.google.com/maps?q=trg%20republike&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/purevpn-coupon/">purevpn coupon</a></div><style>.mapouter{position:relative;text-align:right;height:300px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div>
+
+            </div>
+        </div>
+        <hr>
+
+        <div class="forma">
+            <div class="prijava">
+                <h2>Prijava</h2>
+                Username:<br>
+                <label>
+                    <input type="text" class="label1">
+                </label><br>
+
+                Password:<br>
+                <label>
+                    <input type="text" class="label1">
+                </label>
+
+                <P>
+                    <button type="button" class="login">Log In</button>
+                    <button type="button" class="forgot">Forgot Password</button>
+                </P>
+
+                <p>
+                    <h4>
+                        <sup>_________</sup> Or Sign In With<sup>_________</sup>
+                    </h4>
+                </p>
+                <p>
+                    <a href="https://twitter.com/login" class=" fa fa-twiter">Twitter</a>
+                    <a href="https://www.facebook.com/" class="fa fa-fejs">Facebook</a>
+                    <a href="https://plus.google.com/discover" class="fa fa-google">Google+</a>
+                </p>
+
+            </div>
+
+            <div class="registracija">
+                <div class="levo">
+                <h2>Registracija</h2>
+
+                First Name*<br>
+                <label>
+                    <input type="text" class="label2">
+                </label><br>
+
+                Last Name*<br>
+                <label>
+                        <input type="text" class="label2">
+                    </label><br>
+
+                 Password*<br>
+                    <label>
+                            <input type="password" class="label2">
+                        </label>
+
+                        Confirm Password*<br>
+                        <label>
+                                <input type="password" class="label2">
+                            </label>
+                            </div>
+                    <div class="desno">
+
+                            Email*<br>
+                            <label>
+                                    <input type="email" class="label3">
+                            </label>
+                            Confirm Email*<br>
+                            <label>
+                                     <input type="email" class="label3">
+                            </label>
+                            Naslov poruke*<br>
+                             <label>
+                                        <input type="text" class="label3">
+                            </label>
+
+                            Poruka<br>
+                            <label>
+                                <textarea name="adresa" rows="4" cols="18"></textarea>
+                            </label>
+                    
+
+                           
+
+                            <button type="button" class="signup">Sign Up</button>
+                                        </div>
+                    
+                                    </div>
+                
+                                </div>
+            
+
+                    </div>
+        
+            
+        
+    
+
+                    
+
+</body>
+</html>
